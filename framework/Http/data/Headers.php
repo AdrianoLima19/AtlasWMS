@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Weave\Http\Data;
 
-class Header extends Parameter
+class Headers extends Parameters
 {
     /**
      * @inheritdoc
@@ -23,7 +23,7 @@ class Header extends Parameter
     /**
      * @param array $server
      *
-     * @return Header
+     * @return Headers
      */
     public static function fromServer(array $server): self
     {
