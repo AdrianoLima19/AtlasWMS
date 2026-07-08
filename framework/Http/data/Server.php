@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Weave\Http\Data;
 
-class Server extends Parameter
+class Server extends Parameters
 {
     public function getMethod(): string
     {

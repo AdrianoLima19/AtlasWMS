@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Weave\Http\Data;
 
-class Input extends Parameter
+class Input extends Parameters
 {
     public function getInt(string $key, int $default = 0): int
     {
