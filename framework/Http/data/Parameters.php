@@ -10,7 +10,7 @@ use Countable;
 use IteratorAggregate;
 use Traversable;
 
-class Parameter implements ArrayAccess, Countable, IteratorAggregate
+class Parameters implements ArrayAccess, Countable, IteratorAggregate
 {
     public function __construct(protected array $items = []) {}
 
@@ -71,7 +71,7 @@ class Parameter implements ArrayAccess, Countable, IteratorAggregate
      * @param string $key
      * @param mixed $value
      *
-     * @return Parameter
+     * @return Parameters
      */
     public function set(string $key, mixed $value): self
     {
@@ -83,7 +83,7 @@ class Parameter implements ArrayAccess, Countable, IteratorAggregate
     /**
      * @param array $items
      *
-     * @return Parameter
+     * @return Parameters
      */
     public function add(array $items): self
     {
@@ -93,7 +93,7 @@ class Parameter implements ArrayAccess, Countable, IteratorAggregate
     /**
      * @param string $key
      *
-     * @return Parameter
+     * @return Parameters
      */
     public function remove(string $key): self
     {
@@ -105,7 +105,7 @@ class Parameter implements ArrayAccess, Countable, IteratorAggregate
     /**
      * @param array $items
      *
-     * @return Parameter
+     * @return Parameters
      */
     public function replace(array $items): self
     {
@@ -117,7 +117,7 @@ class Parameter implements ArrayAccess, Countable, IteratorAggregate
     /**
      * @param array $items
      *
-     * @return Parameter
+     * @return Parameters
      */
     public function merge(array $items): self
     {
